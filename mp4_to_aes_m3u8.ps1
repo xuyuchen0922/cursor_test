@@ -1,5 +1,10 @@
 $ErrorActionPreference = 'Continue'
 
+try {
+  [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+  $OutputEncoding = [Console]::OutputEncoding
+} catch {}
+
 $FFMPEG = 'F:\cms\视频转化\ffmpeg-8.0.1-full_build\bin\ffmpeg.exe'
 $AES_KEY = '1234567890abcdef'
 $AES_IV  = 'fedcba0987654321'
